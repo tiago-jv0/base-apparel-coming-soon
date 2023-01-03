@@ -91,8 +91,29 @@ body {
 
     font-size: 1.6rem;
     line-height: 2.8rem;
+    outline: none;
+    color: #423A3A;
+}
+
+.input[aria-invalid="true"] {
+    border: 2px solid #F96464;
+}
+
+.input[aria-invalid="true"] ~ .input__icon-error {
+    display: block;
+}
+
+.input[aria-invalid="true"] ~ .input__error-message {
+    display: block;
+}
 
 
+.input__icon-error {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    inset-block-start: 1.7rem;
+    inset-inline-end: 11.6rem;
 }
 
 .input::placeholder{
@@ -119,8 +140,12 @@ body {
     border-radius: 2.8rem;
 }
 
-.input__error {
+.input__error-message {
+    margin-block-start: 4px;
     display: none;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+    color: #F96464;
 }
 
 .aside {

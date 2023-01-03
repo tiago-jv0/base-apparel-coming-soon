@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
+  <script src="./script.js" defer></script>
+
 </head>
 <body>
   <header class="header">
@@ -27,13 +29,14 @@
       <p class="hero__description">Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <form class="form">
+      <form class="form" novalidate>
         <div class="input__control">
-          <input class="input" required type="email" name="email" id="email" placeholder="Email Address">
+          <input aria-invalid="false" class="input" required type="email" name="email" id="email" placeholder="Email Address">
+          <img class="input__icon-error" src="./images/icon-error.svg" alt="Error">
           <button class="input__submit" type="submit">
             <img src="./images/icon-arrow.svg" alt="Submit form">
           </button>
-          <p class="input__error">Please provide a valid email</p>
+          <p class="input__error-message">Please provide a valid email</p>
         </div>
       </form>
     </section>
