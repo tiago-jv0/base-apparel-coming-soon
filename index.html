@@ -5,19 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 </head>
 <body>
+  <header class="header">
+    <img src="./images/logo.svg" alt="Base Appare">
+  </header>
 
-  We're coming soon
+  <main class="hero">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <section class="hero__information">
 
-  Email Address
+      <h1 class="hero__title"><strong>We're</strong> coming soon</h1>
+
+      <p class="hero__description">Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+      <form class="form">
+        <div class="input__control">
+          <input class="input" required type="email" name="email" id="email" placeholder="Email Address">
+          <button class="input__submit" type="submit">
+            <img src="./images/icon-arrow.svg" alt="Submit form">
+          </button>
+          <p class="input__error">Please provide a valid email</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <aside class="aside">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="./images/hero-desktop.jpg">
+      <img src="./images/hero-mobile.jpg" alt="">
+    </picture>
+  </aside>
+
   
-  </footer>
 </body>
 </html>
