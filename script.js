@@ -19,3 +19,10 @@ const handleEmailBlur = ({ target : input}) => {
 }
 
 emailInput.addEventListener('blur', handleEmailBlur)
+
+
+const formElement = document.querySelector('form')
+
+formElement.addEventListener('submit', (event) => {
+    event.preventDefault()
+})
