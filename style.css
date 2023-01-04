@@ -98,7 +98,7 @@ body {
     display: block;
 }
 
-.input[aria-invalid="true"] ~ .input__error-message {
+.input[aria-invalid="true"] ~ #input-error .input__error-message {
     display: block;
 }
 
